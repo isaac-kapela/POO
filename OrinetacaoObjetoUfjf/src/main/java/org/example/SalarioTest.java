@@ -25,4 +25,15 @@ public class SalarioTest {
             assertEquals("Aumento invalido", e.getMessage());
         }
     }
+
+    @Test
+    public  void deveCalcularSalarioLiquido(){
+        Salario salario = new Salario();
+        salario.calculaSalarioLiquido(80.00, 2);
+        assertEquals(933.64, salario.getSalarioLiquido(), 0.01);
+    }
+
+    public void (){
+
+    }
 }
