@@ -59,11 +59,18 @@ public class Salario {
         if(horaExtra > 2){
             throw new IllegalArgumentException("so e permitido fazer 2h de horas extras");
         }
-        if(horaExtra <= 0){
-            throw new IllegalArgumentException("não da pra lançar 0 de hora extra");
+        if(horaExtra < 0){
+            throw new IllegalArgumentException("não da pra lançar hora extra negativa");
+        }
+        if(desconto < 0){
+            throw new IllegalArgumentException("não deve se lancar desconto negativo");
+        }
+        if(desconto > 80.00){
+            throw  new IllegalArgumentException("Desconto muito alto para essa faixa salarial");
         }
         this.salarioLiquido = this.salario + ((this.salario / 220) * 1.5 * horaExtra) - desconto;
     }
+
 
 }
 

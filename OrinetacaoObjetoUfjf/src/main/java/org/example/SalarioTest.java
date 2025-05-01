@@ -33,7 +33,41 @@ public class SalarioTest {
         assertEquals(933.64, salario.getSalarioLiquido(), 0.01);
     }
 
-    public void (){
 
+    @Test
+    public void NaoDeveLancarDesconto(){
+        Salario salario = new Salario();
+        salario.calculaSalarioLiquido(0.00, 2);
+        assertEquals(1013.64, salario.getSalarioLiquido(),0.01);
+    }
+    @Test
+    public void  naoDeveLancarHr(){
+        try {
+            Salario salario = new Salario();
+            salario.calculaSalarioLiquido(80.00,-1);
+            fail();
+        }
+        catch (IllegalArgumentException e){
+        assertEquals("não da pra lançar hora extra negativa", e.getMessage());
+        }
+    }
+
+    @Test
+    public  void deveLancarExececaoDescontoInvalido(){
+        try {
+            Salario salario = new Salario();
+            salario.calculaSalarioLiquido(90.00, 1);
+            fail();
+        }
+        catch(IllegalArgumentException e){
+            assertEquals("Desconto muito alto para essa faixa salarial", e.getMessage());
+
+        }
+    }
+    @Test
+    public void deveManterSalarioBase(){
+        Salario salario = new Salario();
+        salario.calculaSalarioLiquido(0,0);
+        assertEquals(1000.0, salario.getSalarioLiquido(),0.01);
     }
 }
