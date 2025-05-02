@@ -66,7 +66,6 @@ public class Energia {
         valorBruto = quantQuilowatt*valorQuilowatt;
         Icms = valorBruto * 0.18;
         valorSerPago = Icms+valorBruto;
-
     }
 
 
