@@ -1,14 +1,10 @@
 package org.example;
-
 import org.junit.Test;
-
-import javax.swing.plaf.PanelUI;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.fail;
 
 public class PostoTest {
-
 
     @Test
     public void deveCalcularMediaGastoCombustivel(){
@@ -60,7 +56,4 @@ public class PostoTest {
             assertEquals("o carro esta parado",  e.getMessage());
         }
     }
-
-
-
 }
