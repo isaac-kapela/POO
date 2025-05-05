@@ -1,21 +1,10 @@
 package org.example;
 
-public class Imc {
-    private double imc;
+public class Pessoa{
+
     private String genero;
-
-    public Imc() {
-        this.imc = 0.0;
-        this.genero = "";
-    }
-
-    public double getImc() {
-        return imc;
-    }
-
-    public void setImc(double imc) {
-        this.imc = imc;
-    }
+    private double altura;
+    private  double peso;
 
     public String getGenero() {
         return genero;
@@ -25,19 +14,38 @@ public class Imc {
         this.genero = genero;
     }
 
-    public void calculaImc(String genero, double peso, double altura) {
-        if (altura <= 0 || peso <= 0) {
+    public double getAltura() {
+        return altura;
+    }
+
+    public void setAltura(double altura) {
+        this.altura = altura;
+    }
+
+    public double getPeso() {
+        return peso;
+    }
+
+    public void setPeso(double peso) {
+        this.peso = peso;
+    }
+
+    public Pessoa(String genero, double altura, double peso) {
+        this.genero = genero;
+        this.altura = altura;
+        this.peso = peso;
+    }
+
+    public double calculaImc() {
+        if (this.altura <= 0 || this.peso <= 0) {
             throw new IllegalArgumentException("Peso e altura devem ser maiores que zero.");
         }
-
-        this.genero = genero;
-        this.imc = peso / (altura * altura);
-
-        System.out.println(getCategoriaImc());
+        return this.peso / (this.altura * this.altura);
     }
 
     public String getCategoriaImc() {
-        if (genero.equalsIgnoreCase("F")) {
+        double imc = this.calculaImc();
+        if (this.genero.equalsIgnoreCase("F")) {
             if (imc < 19.1) {
                 return "Abaixo do peso";
             } else if (imc < 25.8) {
