@@ -9,7 +9,7 @@ public class PessoaTest {
 
     @Test
     public void deveCalcularImc() {
-        Pessoa pessoa = new Pessoa("m", 60, 1.60);
+        Pessoa pessoa = new Pessoa("m", 1.60, 60);
         pessoa.calculaImc();
         assertEquals(23.4375, pessoa.calculaImc(), 0.01);
     }
@@ -17,7 +17,7 @@ public class PessoaTest {
     @Test
     public void deveLancarExecaoSexoInvalido() {
         try {
-            Pessoa pessoa = new Pessoa("A", 60, 1.60);
+            Pessoa pessoa = new Pessoa("A", 1.60, 60);
             pessoa.calculaImc();
             fail();
         } catch (IllegalArgumentException e) {
@@ -28,7 +28,7 @@ public class PessoaTest {
     @Test
     public void deveLancarExecaoPesoInvalido() {
         try {
-            Pessoa pessoa = new Pessoa("M", 60, 0);
+            Pessoa pessoa = new Pessoa("M", 1.60, 0);
             pessoa.calculaImc();
             fail();
         } catch (IllegalArgumentException e) {
@@ -37,7 +37,7 @@ public class PessoaTest {
     }
 
     @Test
-    public void deveLnancarExecaoAlturaInvalida() {
+    public void deveLancarExecaoAlturaInvalida() {
         try {
             Pessoa pessoa = new Pessoa("M", 0, 60);
             pessoa.calculaImc();
