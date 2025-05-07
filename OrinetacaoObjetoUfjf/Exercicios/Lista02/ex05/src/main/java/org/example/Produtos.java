@@ -70,8 +70,6 @@ public class Produtos {
         if(porcentagem < 0){
             throw new IllegalArgumentException("desconto invalido");
         }
-
-
         this.preco = preco *(1-(porcentagem/100));
 
     }

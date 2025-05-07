@@ -76,10 +76,31 @@ public class ProdutoTest {
             assertEquals("so é possivel remover 20 itens por vez", e.getMessage());
         }
     }
-    @Test
-    public void deveAplicarDesconto(){
-        Produtos produtos = new Produtos("arroz", 19.99, 80, "alimento");
-        produtos.aplicaDesconto(0.85);
-        assertEquals();
+
+        @Test
+        public void deveAplicarDesconto() {
+            Produtos produto = new Produtos("arroz", 100.00, 80, "alimento");
+            produto.aplicaDesconto(10.0);
+            assertEquals(90.00, produto.getPreco(), 0.01);
+        }
+
+        @Test
+        public void deveAplicarDescontoZero() {
+            Produtos produto = new Produtos("feijão", 50.00, 100, "alimento");
+            produto.aplicaDesconto(0.0);
+            assertEquals(50.00, produto.getPreco(), 0.01);
+        }
+
+        @Test
+        public void deveLancarExcecaoDescontoNegativo() {
+            try {
+                Produtos produto = new Produtos("óleo", 20.00, 50, "alimento");
+                produto.aplicaDesconto(-5.0);
+                fail();
+            } catch (IllegalArgumentException e) {
+                assertEquals("desconto invalido", e.getMessage());
+            }
+        }
     }
-}
+
+
