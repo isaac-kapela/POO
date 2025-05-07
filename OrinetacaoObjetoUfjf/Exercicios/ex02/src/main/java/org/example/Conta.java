@@ -8,7 +8,7 @@ public class Conta {
     public Conta(String titular, int numeroConta) {
         this.titular = titular;
         this.numeroConta = numeroConta;
-        this.saldo = 0.0;
+        this.saldo = 100;
     }
 
     public String getTitular() {
@@ -36,15 +36,14 @@ public class Conta {
     }
 
     public void depositar(double valor){
-        if(saldo<0){
+        if(valor<=0){
             throw new IllegalArgumentException("não é possivel depositar 0 ou valores negativos");
         }
-        if(saldo>=50.000){
+        if(valor>=50.000){
             throw new IllegalArgumentException("Não é possivel fazer um deposito tão alto");
         }
         this.saldo = this.saldo+valor;
     }
-
     public void sacar(double valor){
         if(valor <=0){
             throw new IllegalArgumentException("não é possivel depositar 0 ou valores negativos");
@@ -52,9 +51,7 @@ public class Conta {
         if(valor > this.saldo){
             throw new IllegalArgumentException("saldo insuficiente");
         }
-        if(this.saldo == 0){
-            throw new IllegalArgumentException("saldo zerado não é possivel sacar");
-        }
+
         this.saldo = this.saldo-valor;
     }
 

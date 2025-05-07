@@ -5,42 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="79ca3883-b4be-4d14-8608-dd8e592f2160" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Conta.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/ContaTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ex04/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ex04/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ex04/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ex04/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ex04/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ex04/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ex04/src/main/java/org/example/Pessoa.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ex04/src/main/java/org/example/PessoaTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex01/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex01/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex01/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex01/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex01/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex01/.mvn/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex01/.mvn/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex01/.mvn/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex01/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex01/src/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex01/src/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex01/src/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex01/src/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex01/src/main/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex01/src/main/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex01/src/main/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex01/src/main/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex01/src/main/java/org/example/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex01/src/main/java/org/example/Salario.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex01/src/main/java/org/example/SalarioTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Energia.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/EnergiaTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Conta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Conta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ContaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/ContaTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../ex03/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../ex03/.idea/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../ex03/.idea/encodings.xml" beforeDir="false" />
@@ -65,27 +32,31 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2wkLZYKCE0i6zcfo7wbcvKRfSjp" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "JUnit.ContaTest.deveDepositar.executor": "Run",
-    "JUnit.ContaTest.deveLancarExecaoDepositoInvalido.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "onboarding.tips.debug.path": "C:/Users/dizol/OneDrive/Área de Trabalho/POO/OrinetacaoObjetoUfjf/Exercicios/ex02/src/main/java/org/example/Main.java"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JUnit.ContaTest.deveDepositar.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ContaTest.deveLancarExecaoDepositoAlto.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ContaTest.deveLancarExecaoDepositoInvalido.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ContaTest.deveLancarExecaoSaqueAlto.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ContaTest.deveLancarExecaoSaqueInvalido.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ContaTest.deveSacar.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/dizol/OneDrive/Área de Trabalho/POO/OrinetacaoObjetoUfjf/Exercicios/ex02/src/main/java/org/example/Main.java&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="JUnit.ContaTest.deveLancarExecaoDepositoInvalido">
-    <configuration name="ContaTest.deveDepositar" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+}</component>
+  <component name="RunManager" selected="JUnit.ContaTest.deveLancarExecaoSaldoZerado">
+    <configuration name="ContaTest.deveLancarExecaoDepositoAlto" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ex02" />
       <extension name="coverage">
         <pattern>
@@ -95,13 +66,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.example" />
       <option name="MAIN_CLASS_NAME" value="org.example.ContaTest" />
-      <option name="METHOD_NAME" value="deveDepositar" />
+      <option name="METHOD_NAME" value="deveLancarExecaoDepositoAlto" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ContaTest.deveLancarExecaoDepositoInvalido" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ContaTest.deveLancarExecaoSaldoZerado" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ex02" />
       <extension name="coverage">
         <pattern>
@@ -111,7 +82,55 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.example" />
       <option name="MAIN_CLASS_NAME" value="org.example.ContaTest" />
-      <option name="METHOD_NAME" value="deveLancarExecaoDepositoInvalido" />
+      <option name="METHOD_NAME" value="deveLancarExecaoSaldoZerado" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ContaTest.deveLancarExecaoSaqueAlto" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ex02" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.ContaTest" />
+      <option name="METHOD_NAME" value="deveLancarExecaoSaqueAlto" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ContaTest.deveLancarExecaoSaqueInvalido" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ex02" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.ContaTest" />
+      <option name="METHOD_NAME" value="deveLancarExecaoSaqueInvalido" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ContaTest.deveSacar" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ex02" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.ContaTest" />
+      <option name="METHOD_NAME" value="deveSacar" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -119,8 +138,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ContaTest.deveLancarExecaoDepositoInvalido" />
-        <item itemvalue="JUnit.ContaTest.deveDepositar" />
+        <item itemvalue="JUnit.ContaTest.deveLancarExecaoSaldoZerado" />
+        <item itemvalue="JUnit.ContaTest.deveLancarExecaoSaqueAlto" />
+        <item itemvalue="JUnit.ContaTest.deveLancarExecaoSaqueInvalido" />
+        <item itemvalue="JUnit.ContaTest.deveSacar" />
+        <item itemvalue="JUnit.ContaTest.deveLancarExecaoDepositoAlto" />
       </list>
     </recent_temporary>
   </component>
