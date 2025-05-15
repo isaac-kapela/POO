@@ -1,11 +1,13 @@
 package org.example;
 
-public class Circulo {
+public class Circulo  extends FormaGeometrica{
 
     private double raio;
 
-    public Circulo(double raio) {
+    public Circulo(String nome, double raio) {
+        super(nome);
         this.raio = raio;
+
     }
 
     public double getRaio() {
@@ -13,10 +15,13 @@ public class Circulo {
     }
 
     public void setRaio(double raio) {
+        if(raio < 0){
+            throw new IllegalArgumentException("raio invalisa");
+        }
         this.raio = raio;
     }
     public  double calcularPerimetro(){
-        return 3.14159265359 * this.getRaio() * this.getRaio();
+        return 2 * 3.14159265359  * this.getRaio();
     }
     public double calcularArea(){
         return  2 * 3.14159265359 * this.getRaio();
