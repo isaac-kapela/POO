@@ -6,29 +6,28 @@ public class Retangulo extends  FormaGeometrica {
 
     public Retangulo( String nome, double largura, double altrura) {
         super(nome);
-        this.largura = largura;
-        this.altrura = altrura;
+        this.setLargura(largura);
+        this.setAltrura(altrura);
     }
-
     public double getLargura() {
         return largura;
 
     }
-
     public double getAltrura() {
         return altrura;
 
     }
     public void setLargura(double largura) {
         if(largura <0){
-            throw new IllegalArgumentException("Largura invalisa");
+            throw new IllegalArgumentException("Largura invalida");
         }
         this.largura = largura;
     }
 
+
     public void setAltrura(double altrura) {
         if(altrura <0){
-            throw new IllegalArgumentException("altura invalisa");
+            throw new IllegalArgumentException("altura invalida");
         }
         this.altrura = altrura;
     }
@@ -38,7 +37,7 @@ public class Retangulo extends  FormaGeometrica {
 
     }
     public double calcularPerimetro() {
-        return 2 * (this.getAltrura() + this.getLargura());
+        return (2 * (this.getAltrura() + this.getLargura()));
 
     }
 }

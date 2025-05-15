@@ -6,8 +6,7 @@ public class Circulo  extends FormaGeometrica{
 
     public Circulo(String nome, double raio) {
         super(nome);
-        this.raio = raio;
-
+        setRaio(raio);
     }
 
     public double getRaio() {
@@ -16,7 +15,7 @@ public class Circulo  extends FormaGeometrica{
 
     public void setRaio(double raio) {
         if(raio < 0){
-            throw new IllegalArgumentException("raio invalisa");
+            throw new IllegalArgumentException("Raio inválido");
         }
         this.raio = raio;
     }
@@ -24,6 +23,6 @@ public class Circulo  extends FormaGeometrica{
         return 2 * 3.14159265359  * this.getRaio();
     }
     public double calcularArea(){
-        return  2 * 3.14159265359 * this.getRaio();
+        return    3.14159265359 * (this.getRaio() * this.getRaio());
     }
 }
