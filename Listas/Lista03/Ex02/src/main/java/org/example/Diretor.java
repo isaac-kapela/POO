@@ -16,16 +16,13 @@ public class Diretor extends Funcionario{
         this.bonus = bonus;
     }
 
-
-
     public  double calcularPagamento(){
-        if(getSalarioMensal() <= 0 ){
+        if(getSalarioMensal() <= 2000 ){
             throw new IllegalArgumentException("salario invalido");
         }
-        if(getBonus() <=0){
-            throw new IllegalArgumentException("bonus invalido");
-        }
-        return  this.getSalarioMensal() * (getBonus() / 100);
+
+
+        return this.getSalarioMensal()+(this.getSalarioMensal() * (getBonus() / 100));
     }
 
 
