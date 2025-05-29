@@ -1,28 +1,24 @@
 package org.example;
 
 import org.junit.Test;
-
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.fail;
+import static org.junit.Assert.*;
 
 public class DiretorTest {
 
-
     @Test
-    public void deveCalcularSalario(){
-        Diretor diretor = new Diretor(2000, "sla");
-        assertEquals(2200, diretor.calcularPagamento(), 0.001);
+    public void deveCalcularSalarioComParticipacaoNosLucros() {
+        Diretor diretor = new Diretor(3000, "Ana", 10000); // 10% dos lucros = 1000
+        assertEquals(4000, diretor.calcularPagamento(), 0.001);
     }
 
     @Test
-    public void deveLancarExecaoPagamentoInvalido(){
+    public void deveLancarExcecaoSalarioMenorOuIgual2000() {
         try {
-            Diretor diretor = new Diretor(2000, "sla");
+            Diretor diretor = new Diretor(2000, "Ana", 10000);
             diretor.calcularPagamento();
-            fail();
+            fail("Era esperado lançar IllegalArgumentException");
+        } catch (IllegalArgumentException e) {
+            assertEquals("salario invalido", e.getMessage());
         }
-        catch (IllegalArgumentException e){
-            assertEquals("salario invalido", e.getMessage());       }
     }
-
 }

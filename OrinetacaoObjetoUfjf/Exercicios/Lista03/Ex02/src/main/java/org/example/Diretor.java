@@ -1,29 +1,17 @@
 package org.example;
 
-public class Diretor extends Funcionario{
-    private double bonus;
+public class Diretor extends Funcionario {
+    private double lucroEmpresa;
 
-    public Diretor(double salarioMensal, String nome) {
+    public Diretor(double salarioMensal, String nome, double lucroEmpresa) {
         super(salarioMensal, nome);
-        setBonus(10);
+        this.lucroEmpresa = lucroEmpresa;
     }
 
-    public double getBonus() {
-        return bonus;
-    }
-
-    public void setBonus(double bonus) {
-        this.bonus = bonus;
-    }
-
-    public  double calcularPagamento(){
-        if(getSalarioMensal() <= 2000 ){
+    public double calcularPagamento() {
+        if (getSalarioMensal() <= 2000) {
             throw new IllegalArgumentException("salario invalido");
         }
-
-
-        return this.getSalarioMensal()+(this.getSalarioMensal() * (getBonus() / 100));
+        return getSalarioMensal() + 0.1 * lucroEmpresa;
     }
-
-
 }
