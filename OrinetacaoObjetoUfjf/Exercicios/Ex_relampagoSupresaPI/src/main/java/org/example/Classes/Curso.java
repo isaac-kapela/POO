@@ -1,13 +1,15 @@
-package org.example;
+package org.example.Classes;
 
 public class Curso {
 
     private  String nome;
-    private  Professor coordenador;
+    private Professor coordenador;
+    private Escola nomeEscola;
 
-    public Curso(String nome, Professor coordenador) {
+    public Curso(String nome, Professor coordenador, Escola nomeEscola) {
         this.setNome(nome);
         this.setCoordenador(coordenador);
+        this.setNomeEscola(nomeEscola);
     }
 
     public String getNome() {
@@ -29,10 +31,16 @@ public class Curso {
         this.coordenador = coordenador;
     }
 
+    public Escola getNomeEscola() {
+        return nomeEscola;
+    }
 
+    public void setNomeEscola(Escola nomeEscola) {
+        this.nomeEscola = nomeEscola;
+    }
 
     public String getEscolaridadeCordenador(){
-        return this.coordenador.getNivelEnsino().getEscolaridade();
+        return this.getCoordenador().getNivelEnsino().getEscolaridade();
     }
 
 }

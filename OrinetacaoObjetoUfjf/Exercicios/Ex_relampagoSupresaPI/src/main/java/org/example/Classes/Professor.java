@@ -1,11 +1,13 @@
-package org.example;
+package org.example.Classes;
 
-public class Professor extends  Pessoa{
+import org.example.ClassePai.Pessoa;
+
+public class Professor extends Pessoa {
 
     private Escolaridade nivelEnsino;
 
-    public Professor(String nome, int idade, Escolaridade nivelEnsino) {
-        super(nome, idade);
+    public Professor(String nome, int idade, Escolaridade nivelEnsino, Cidade naturalidade) {
+        super(nome, idade, naturalidade);
         this.setNivelEnsino(nivelEnsino);
     }
 
@@ -23,4 +25,9 @@ public class Professor extends  Pessoa{
     public String getNomeEscolaridade(){
         return  this.nivelEnsino.getEscolaridade();
     }
+
+    public  String getCidadeNascimentoProfessor(){
+            return this.getNaturalidade().getNome();
+    }
+
 }
