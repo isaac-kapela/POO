@@ -42,7 +42,7 @@ public class AlunoTest {
         Escola escola = new Escola("escolaxxx", professor, cidade);
         Curso curso = new Curso("SI", professor, escola);
         Aluno aluno = new Aluno("Isaac", 20, cidade, curso);
-        assertEquals("Antonio", aluno.getCoordenadorCursoAluno());
+        assertEquals("Antonio", aluno.getNomeCoordenadorCursoAluno());
 
     }
 }

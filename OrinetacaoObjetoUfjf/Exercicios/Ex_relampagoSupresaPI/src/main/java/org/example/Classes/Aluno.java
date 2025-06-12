@@ -14,6 +14,9 @@ public class Aluno extends Pessoa {
     }
 
     public void setCursoAluno(Curso cursoAluno) {
+        if(cursoAluno == null){
+            throw new IllegalArgumentException("curso invalido");
+        }
         this.cursoAluno = cursoAluno;
     }
 
@@ -24,8 +27,8 @@ public class Aluno extends Pessoa {
     public  String getEstadoAlunoEstuda(){
         return this.getCursoAluno().getNomeEscola().getCidadeEscola().getEstado().getNome();
 }
-    public String getCoordenadorCursoAluno(){
-        return  this.getCursoAluno().getCoordenador().getNome();
+    public String getNomeCoordenadorCursoAluno(){
+        return  this.cursoAluno.getNomeCoordenador();
     }
 
 }
