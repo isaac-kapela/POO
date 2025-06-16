@@ -1,3 +1,4 @@
+
 package org.example.Classes;
 
 public class Escola {
@@ -58,7 +59,4 @@ public class Escola {
     public String getEscolaridadeDiretor(){
         return this.getDiretor().getNivelEnsino().getEscolaridade();
     }
-}
-    public String getDiretorProfessor(){
-        return this.get
 }

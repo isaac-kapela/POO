@@ -43,4 +43,8 @@ public class Curso {
         return this.getCoordenador().getNivelEnsino().getEscolaridade();
     }
 
+    public String getNomeCoordenador(){
+        return this.coordenador.getNome();
+    }
+
 }
