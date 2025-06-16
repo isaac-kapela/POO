@@ -12,7 +12,7 @@ public class Funcionario {
         this.setCargo(cargo);
         this.setNivelEnsino(nivelEnsino);
         this.setAlocacao(alocacao);
-        this.setCoordenacao(coordenacao);
+       this.setCoordenacao(coordenacao);
     }
 
     public String getNome() {
@@ -52,7 +52,7 @@ public class Funcionario {
     }
 
     public void setCoordenacao(Filial coordenacao) {
-        coordenacao = coordenacao;
+        this.coordenacao = coordenacao;
     }
 
     public String getEscolaridadePresida(){
