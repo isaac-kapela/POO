@@ -4,11 +4,13 @@ public class Funcionario {
     private String nome;
     private String cargo;
     private Escolaridade nivelEnsino;
+    private Departamento alocacao;
 
     public Funcionario(String nome, String cargo, Escolaridade nivelEnsino) {
         this.nome = nome;
         this.cargo = cargo;
         this.nivelEnsino = nivelEnsino;
+        this.alocacao = alocacao;
     }
 
     public String getNome() {
@@ -35,7 +37,18 @@ public class Funcionario {
         this.nivelEnsino = nivelEnsino;
     }
 
+    public Departamento getAlocacao() {
+        return alocacao;
+    }
+
+    public void setAlocacao(Departamento alocacao) {
+        this.alocacao = alocacao;
+    }
+
     public String getEscolaridadePresida(){
         return this.nivelEnsino.getEscolaridade();
+    }
+    public String getPaisAlocaoFun(){
+        return  this.alocacao.getNomeEmpresa();
     }
 }

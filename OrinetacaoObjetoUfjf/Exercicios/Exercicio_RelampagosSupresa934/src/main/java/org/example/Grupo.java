@@ -28,4 +28,9 @@ public class Grupo {
     public String getEscolaridadePresidenteGrupo(){
         return this.Presidente.getEscolaridadePresida();
     }
+
+    public String getNomePais(){
+        return  this.sede.getNome();
+    }
+
 }
