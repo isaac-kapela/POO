@@ -5,8 +5,8 @@ public class Cidade {
     private  Estado estado;
 
     public Cidade(String nome, Estado estado) {
-        this.nome = nome;
-        this.estado = estado;
+        this.setNome(nome);
+        this.setEstado(estado);
     }
 
     public String getNome() {

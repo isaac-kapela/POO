@@ -6,8 +6,8 @@ public class Empresa {
     private Funcionario diretor;
 
     public Empresa(String nome, Grupo grupo) {
-        this.nome = nome;
-        this.grupo = grupo;
+        this.setNome(nome);
+        this.setGrupo(grupo);
     }
 
     public String getNome() {

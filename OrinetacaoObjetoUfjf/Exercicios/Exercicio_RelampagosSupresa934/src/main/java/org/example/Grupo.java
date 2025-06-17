@@ -5,8 +5,8 @@ public class Grupo {
     private Funcionario Presidente;
 
     public Grupo(Pais sede, Funcionario presidente) {
-        this.sede = sede;
-        Presidente = presidente;
+        this.setSede(sede);
+        this.setPresidente(presidente);
     }
 
     public Pais getSede() {

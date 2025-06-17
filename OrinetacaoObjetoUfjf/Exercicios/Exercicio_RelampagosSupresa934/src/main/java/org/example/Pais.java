@@ -6,9 +6,9 @@ public class Pais {
     private String capital;
 
     public Pais(String nome, int num_Habitantes, String capital) {
-        this.nome = nome;
-        this.num_Habitantes = num_Habitantes;
-        this.capital = capital;
+        this.setNome(nome);
+        this.setNum_Habitantes(num_Habitantes);
+        this.setCapital(capital);
     }
 
     public String getNome() {

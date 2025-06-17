@@ -5,8 +5,8 @@ public class Estado {
     private Pais pais;
 
     public Estado(String nome, Pais pais) {
-        this.nome = nome;
-        this.pais = pais;
+        this.setNome(nome);
+        this.setPais(pais);
     }
 
     public String getNome() {

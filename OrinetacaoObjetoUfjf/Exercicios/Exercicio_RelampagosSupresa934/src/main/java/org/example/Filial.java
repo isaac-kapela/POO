@@ -6,9 +6,9 @@ public class Filial {
     private Empresa empresa;
 
     public Filial(String nome, Estado estado, Empresa empresa) {
-        this.nome = nome;
-        this.estado = estado;
-        this.empresa = empresa;
+        this.setNome(nome);
+        this.setEstado(estado);
+        this.setEmpresa(empresa);
     }
 
     public String getNome() {
