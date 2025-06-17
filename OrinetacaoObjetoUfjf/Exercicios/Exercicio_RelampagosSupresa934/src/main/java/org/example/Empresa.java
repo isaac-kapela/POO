@@ -3,6 +3,7 @@ package org.example;
 public class Empresa {
     private  String nome;
     private  Grupo grupo;
+    private Funcionario diretor;
 
     public Empresa(String nome, Grupo grupo) {
         this.nome = nome;
@@ -25,7 +26,18 @@ public class Empresa {
         this.grupo = grupo;
     }
 
+    public Funcionario getDiretor() {
+        return diretor;
+    }
+
+    public void setDiretor(Funcionario diretor) {
+        this.diretor = diretor;
+    }
+
     public String getPais(){
         return this.grupo.getNomePais();
+    }
+    public String getNomeDiretor(){
+        return this.diretor.getNome();
     }
 }

@@ -37,4 +37,8 @@ public class Filial {
     public String getEstadoFilialFunCoordena(){
         return this.getEstado().getNome();
     }
+
+    public  String getNomeDiretorEmpresaFilial(){
+        return this.empresa.getNomeDiretor();
+    }
 }

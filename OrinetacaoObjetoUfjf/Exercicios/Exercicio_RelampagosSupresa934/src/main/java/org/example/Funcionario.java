@@ -65,4 +65,7 @@ public class Funcionario {
     public String getEstadoFilialCoordena(){
         return this.coordenacao.getEstadoFilialFunCoordena();
     }
+    public String getEscolaridadeChefe(){
+        return this.nivelEnsino.getEscolaridade();
+    }
 }
