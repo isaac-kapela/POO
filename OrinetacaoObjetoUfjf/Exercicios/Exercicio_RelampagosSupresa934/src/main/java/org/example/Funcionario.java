@@ -11,8 +11,6 @@ public class Funcionario {
         this.setNome(nome);
         this.setCargo(cargo);
         this.setNivelEnsino(nivelEnsino);
-        this.setAlocacao(alocacao);
-       this.setCoordenacao(coordenacao);
     }
 
     public String getNome() {
@@ -36,6 +34,9 @@ public class Funcionario {
     }
 
     public void setNivelEnsino(Escolaridade nivelEnsino) {
+        if (nivelEnsino == null) {
+            throw new IllegalArgumentException("todo funcionário precisa ter um nível de ensino");
+        }
         this.nivelEnsino = nivelEnsino;
     }
 
@@ -44,6 +45,9 @@ public class Funcionario {
     }
 
     public void setAlocacao(Departamento alocacao) {
+        if (alocacao == null) {
+            throw new IllegalArgumentException("todo funcionario presica de uma alocaçao");
+        }
         this.alocacao = alocacao;
     }
 
@@ -55,17 +59,28 @@ public class Funcionario {
         this.coordenacao = coordenacao;
     }
 
-    public String getEscolaridadePresida(){
+    public String getEscolaridadePresida() {
+        if (this.nivelEnsino == null) {
+            throw new IllegalStateException("nível de ensino não definido");
+        }
         return this.nivelEnsino.getEscolaridade();
     }
-    public String getPaisAlocaoFun(){
-        return  this.alocacao.getNomeEmpresa();
+
+    public String getPaisAlocaoFun() {
+        return this.alocacao.getNomeEmpresa();
     }
 
-    public String getEstadoFilialCoordena(){
+    public String getEstadoFilialCoordena() {
+        if (this.coordenacao == null) {
+            throw new IllegalStateException("coordenacao não definida");
+        }
         return this.coordenacao.getEstadoFilialFunCoordena();
     }
-    public String getEscolaridadeChefe(){
+
+    public String getEscolaridadeChefe() {
+        if (this.nivelEnsino == null) {
+            throw new IllegalStateException("nível de ensino não definido");
+        }
         return this.nivelEnsino.getEscolaridade();
     }
 }

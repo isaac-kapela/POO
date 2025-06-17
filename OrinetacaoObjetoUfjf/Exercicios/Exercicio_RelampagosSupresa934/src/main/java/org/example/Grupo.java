@@ -14,6 +14,9 @@ public class Grupo {
     }
 
     public void setSede(Pais sede) {
+        if (sede == null) {
+            throw new IllegalArgumentException("todo grupo empresarial precisa de uma sede");
+        }
         this.sede = sede;
     }
 
@@ -22,15 +25,21 @@ public class Grupo {
     }
 
     public void setPresidente(Funcionario presidente) {
-        Presidente = presidente;
+        if (presidente == null) {
+            throw new IllegalArgumentException("todo grupo precisa de um presidente");
+        }
+        this.Presidente = presidente;
     }
 
-    public String getEscolaridadePresidenteGrupo(){
+    public String getEscolaridadePresidenteGrupo() {
+        if (Presidente == null) {
+            throw new IllegalStateException("presidente não definido");
+        }
         return this.Presidente.getEscolaridadePresida();
     }
 
-    public String getNomePais(){
-        return  this.sede.getNome();
+    public String getNomePais() {
+        return this.sede.getNome();
     }
 
 }

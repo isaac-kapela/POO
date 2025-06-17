@@ -14,6 +14,9 @@ public class Estado {
     }
 
     public void setNome(String nome) {
+        if (nome == null || nome.trim().isEmpty()) {
+            throw new IllegalArgumentException("Todo estado precisa de um nome");
+        }
         this.nome = nome;
     }
 
@@ -22,8 +25,10 @@ public class Estado {
     }
 
     public void setPais(Pais pais) {
+        if (pais == null) {
+            throw new IllegalArgumentException("Todo estado precisa de um pais");
+        }
         this.pais = pais;
     }
-
 
 }

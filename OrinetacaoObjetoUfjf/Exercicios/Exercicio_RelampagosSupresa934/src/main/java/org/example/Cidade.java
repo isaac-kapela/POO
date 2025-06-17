@@ -2,7 +2,7 @@ package org.example;
 
 public class Cidade {
     private String nome;
-    private  Estado estado;
+    private Estado estado;
 
     public Cidade(String nome, Estado estado) {
         this.setNome(nome);
@@ -14,6 +14,9 @@ public class Cidade {
     }
 
     public void setNome(String nome) {
+        if (nome == null || nome.trim().isEmpty()) {
+            throw new IllegalArgumentException("Toda cidade precisa ter um nome ");
+        }
         this.nome = nome;
     }
 
@@ -22,8 +25,9 @@ public class Cidade {
     }
 
     public void setEstado(Estado estado) {
+        if (estado == null) {
+            throw new IllegalArgumentException("Toda cidade precisa de um estado");
+        }
         this.estado = estado;
     }
-
-
 }

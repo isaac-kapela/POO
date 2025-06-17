@@ -1,13 +1,13 @@
 package org.example;
 
 public class Pais {
-    private  String nome;
-    private  int num_Habitantes;
+    private String nome;
+    private int numHabitantes;
     private String capital;
 
-    public Pais(String nome, int num_Habitantes, String capital) {
+    public Pais(String nome, int numHabitantes, String capital) {
         this.setNome(nome);
-        this.setNum_Habitantes(num_Habitantes);
+        this.setNumHabitantes(numHabitantes);
         this.setCapital(capital);
     }
 
@@ -16,15 +16,21 @@ public class Pais {
     }
 
     public void setNome(String nome) {
+        if (nome == null || nome.isBlank()) {
+            throw new IllegalArgumentException("Todo país deve ter um nome válido");
+        }
         this.nome = nome;
     }
 
-    public int getNum_Habitantes() {
-        return num_Habitantes;
+    public int getNumHabitantes() {
+        return numHabitantes;
     }
 
-    public void setNum_Habitantes(int num_Habitantes) {
-        this.num_Habitantes = num_Habitantes;
+    public void setNumHabitantes(int numHabitantes) {
+        if (numHabitantes < 0) {
+            throw new IllegalArgumentException("Número de habitantes não pode ser negativo");
+        }
+        this.numHabitantes = numHabitantes;
     }
 
     public String getCapital() {
@@ -32,6 +38,10 @@ public class Pais {
     }
 
     public void setCapital(String capital) {
+        if (capital == null || capital.isBlank()) {
+            throw new IllegalArgumentException("Todo país deve ter uma capital válida");
+        }
         this.capital = capital;
     }
+
 }

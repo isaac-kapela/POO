@@ -1,7 +1,7 @@
 package org.example;
 
 public class Filial {
-    private  String nome;
+    private String nome;
     private Estado estado;
     private Empresa empresa;
 
@@ -16,6 +16,9 @@ public class Filial {
     }
 
     public void setNome(String nome) {
+        if (nome == null || nome.trim().isEmpty()) {
+            throw new IllegalArgumentException("toda filial precisa ter um nome");
+        }
         this.nome = nome;
     }
 
@@ -24,6 +27,9 @@ public class Filial {
     }
 
     public void setEstado(Estado estado) {
+        if (estado == null) {
+            throw new IllegalArgumentException("toda filial tem um estado");
+        }
         this.estado = estado;
     }
 
@@ -32,13 +38,19 @@ public class Filial {
     }
 
     public void setEmpresa(Empresa empresa) {
+        if (empresa == null) {
+            throw new IllegalArgumentException("toda filial deve pertencer a uma empresa");
+        }
         this.empresa = empresa;
     }
-    public String getEstadoFilialFunCoordena(){
-        return this.getEstado().getNome();
+
+    public String getEstadoFilialFunCoordena() {
+        return this.estado.getNome();
     }
 
-    public  String getNomeDiretorEmpresaFilial(){
+    public String getNomeDiretorEmpresaFilial() {
+
         return this.empresa.getNomeDiretor();
     }
+
 }
