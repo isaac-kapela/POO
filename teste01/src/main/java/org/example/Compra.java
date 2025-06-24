@@ -9,5 +9,9 @@ public class Compra extends  Transacao{
         super(dataTransacao, quant, produto);
     }
 
+    public void comprar(){
+        
+    }
+
 
 }
