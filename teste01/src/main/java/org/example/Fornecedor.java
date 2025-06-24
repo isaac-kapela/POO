@@ -1,17 +1,15 @@
 package org.example;
 
-public class Fornecedor extends Pessoa{
-    private  int cnpj;
+public class Fornecedor extends Pessoa {
+    private String cnpj;
 
-    public Fornecedor(String nome) {
+    public Fornecedor(String nome, String cnpj) {
         super(nome);
-    }
-
-    public int getCnpj() {
-        return cnpj;
-    }
-
-    public void setCnpj(int cnpj) {
         this.cnpj = cnpj;
     }
+
+    public String getCnpj() {
+        return cnpj;
+    }
 }
+

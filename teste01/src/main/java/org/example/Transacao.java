@@ -1,29 +1,20 @@
 package org.example;
 
 public class Transacao {
-
     private String dataTransacao;
-    private int quant;
-    private Produto produto;
+    private int qtde;
 
-    public Transacao(String dataTransacao, int quant,Produto produto) {
+    public Transacao(String dataTransacao, Produto produto, int qtde) {
         this.dataTransacao = dataTransacao;
-        this.quant = quant;
+        this.qtde = qtde;
+        produto.registrarHistorico(this);
     }
 
     public String getDataTransacao() {
         return dataTransacao;
     }
 
-    public void setDataTransacao(String dataTransacao) {
-        this.dataTransacao = dataTransacao;
-    }
-
-    public int getQuant() {
-        return quant;
-    }
-
-    public void setQuant(int quant) {
-        this.quant = quant;
+    public int getQtde() {
+        return qtde;
     }
 }

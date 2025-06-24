@@ -1,17 +1,21 @@
 package org.example;
+public class Compra extends Transacao {
+    private double precoUnit;
 
-public class Compra extends  Transacao{
-    private int precoUnidade;
-    private Fornecedor fornecedor;
-
-    public Compra(String dataTransacao, Fornecedor fornecedor, int quant, Produto produto) {
-        super(dataTransacao, quant, produto);
+    public Compra(String dataCompra, Produto produto, Fornecedor fornecedor, int qtdeCompra, double precoUnit) {
+        super(dataCompra, produto, qtdeCompra);
+        this.precoUnit = precoUnit;
+        comprar(produto, qtdeCompra);
     }
 
-
-    public void comprar(String dataTrasancao, Fornecedor fornecedor, int quantidadeCompra, int precoUnidade){
-
+    public void comprar(Produto produto, int qtdeCompra) {
+        if (!produto.verificarEstoqueExcedente(qtdeCompra)) {
+            throw new IllegalArgumentException("Compra excede o limite de estoque do produto.");
+        }
+        produto.creditarEstoque(qtdeCompra);
     }
 
-
+    public double getPrecoUnit() {
+        return precoUnit;
+    }
 }

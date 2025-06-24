@@ -5,120 +5,76 @@ import java.util.List;
 
 public class Produto {
     private String nome;
-    private int quantEstoque;
-    private int precoUnitario;
-    private  int estotoqueMinimo;
-    private  int estoqueMaximo;
-    private String historico;
-    List<String> vendas = new ArrayList<>();
+    private int qtdeEstoque;
+    private double precoUnit;
+    private int estoqueMinimo;
+    private int estoqueMaximo;
+    private List<Transacao> historico;
 
-    public Produto(String nome, int quantEstoque, int precoUnitario, int estotoqueMinimo, int estoqueMaximo, String historico) {
+    public Produto(String nome, int qtdeEstoque, double precoUnit, int estoqueMinimo, int estoqueMaximo) {
         this.nome = nome;
-        this.quantEstoque = quantEstoque;
-        this.precoUnitario = precoUnitario;
-        this.estotoqueMinimo = estotoqueMinimo;
+        this.qtdeEstoque = qtdeEstoque;
+        this.precoUnit = precoUnit;
+        this.estoqueMinimo = estoqueMinimo;
         this.estoqueMaximo = estoqueMaximo;
-        this.historico = historico;
+        this.historico = new ArrayList<>();
+    }
+
+    public void debitarEstoque(int quantidade) {
+        if (!verificarEstoqueSuficiente(quantidade)) {
+            throw new IllegalArgumentException("Estoque insuficiente para a venda.");
+        }
+        qtdeEstoque -= quantidade;
+    }
+
+    public void creditarEstoque(int quantidade) {
+        if (!verificarEstoqueExcedente(quantidade)) {
+            throw new IllegalArgumentException("Quantidade excede o estoque máximo permitido.");
+        }
+        qtdeEstoque += quantidade;
+    }
+
+    public boolean verificarEstoqueBaixo() {
+        return qtdeEstoque < estoqueMinimo;
+    }
+
+    public boolean verificarEstoqueExcedente(int quantidade) {
+        return qtdeEstoque + quantidade <= estoqueMaximo;
+    }
+
+    public boolean verificarEstoqueSuficiente(int quantidade) {
+        return qtdeEstoque >= quantidade;
+    }
+
+    public double calcularValorVenda(int quantidade) {
+        return quantidade * precoUnit;
+    }
+
+    public void registrarHistorico(Transacao t) {
+        historico.add(t);
+    }
+
+    public List<Transacao> getHistorico() {
+        return historico;
     }
 
     public String getNome() {
         return nome;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    public int getQtdeEstoque() {
+        return qtdeEstoque;
     }
 
-    public int getQuantEstoque() {
-        return quantEstoque;
+    public double getPrecoUnit() {
+        return precoUnit;
     }
 
-    public void setQuantEstoque(int quantEstoque) {
-        this.quantEstoque = quantEstoque;
-    }
-
-    public int getPrecoUnitario() {
-        return precoUnitario;
-    }
-
-    public void setPrecoUnitario(int precoUnitario) {
-        this.precoUnitario = precoUnitario;
-    }
-
-    public int getEstotoqueMinimo() {
-        return estotoqueMinimo;
-    }
-
-    public void setEstotoqueMinimo(int estotoqueMinimo) {
-        this.estotoqueMinimo = estotoqueMinimo;
+    public int getEstoqueMinimo() {
+        return estoqueMinimo;
     }
 
     public int getEstoqueMaximo() {
         return estoqueMaximo;
     }
-
-    public void setEstoqueMaximo(int estoqueMaximo) {
-        this.estoqueMaximo = estoqueMaximo;
-    }
-
-    public String getHistorico() {
-        return historico;
-    }
-
-    public void setHistorico(String historico) {
-        this.historico = historico;
-    }
-    public String resgistrarHistorico(String transacao){
-       return   this.historico = transacao;
-    }
-
-    public String exibirHistorico(){
-        return getHistorico();
-    }
-    public void debitarEstoque(int quantidade){
-        this.quantEstoque = this.quantEstoque-quantidade;
-    }
-    public void creditarEstoque(int quantidade){
-        this.quantEstoque = this.quantEstoque + quantidade;
-    }
-
-    public boolean verificarEstoqueBaixo(){
-        if(this.quantEstoque< this.estotoqueMinimo){
-            return  true;
-        }
-        else{
-            return false;
-        }
-    }
-
-    public boolean verificarEstoqueInsuficiente(int quantidade){
-        if(quantidade > this.quantEstoque){
-            return true;
-        }
-        else{
-            return false;
-        }
-    }
-
-    public boolean verificarEstoqueExcedente(int quantidade){
-        int quantSomada = this.quantEstoque+quantidade;
-        if(quantSomada > this.estotoqueMinimo){
-            return  true;
-        }
-        else{
-            return false;
-        }
-    }
-
-    public int calcularValorVenda(int quantidade){
-        return this.precoUnitario*quantidade;
-    }
-
-    public void vender(String dataVenda,Cliente cliente,int quantidadeVendida){
-        Venda venda = new Venda(dataVenda, cliente, quantidadeVendida, this);
-        if(venda.vender == true){
-            return true;
-        }
-    }
-    }
-
+}
