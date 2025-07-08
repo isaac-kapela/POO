@@ -1,4 +1,21 @@
 package org.example;
 
-public class Lote {
+public class Lote extends Imovel{
+    private double metragemQuadradaTerreno;
+
+    public Lote(int codigo, String endereco, Contribuinte propretario) {
+        super(codigo, endereco, propretario);
+    }
+
+    public double getMetragemQuadradaTerreno() {
+        return metragemQuadradaTerreno;
+    }
+
+    public void setMetragemQuadradaTerreno(double metragemQuadradaTerreno) {
+        this.metragemQuadradaTerreno = metragemQuadradaTerreno;
+    }
+
+    public double calculaIptu() {
+      return   this.metragemQuadradaTerreno*30;
+    }
 }
