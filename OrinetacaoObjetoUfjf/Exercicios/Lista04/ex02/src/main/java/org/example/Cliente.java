@@ -36,10 +36,13 @@ public class Cliente {
     public void setContas(ArrayList<Conta> contas) {
         this.contas = contas;
     }
-    public void getContasClientes(){
+    public boolean getContasClientes(Cliente cliente){
         boolean achou = false;
         for(Conta contas: this.contas){
-            if(contas.getCliente().equals())
+            if(contas.getCliente().equals(cliente)){
+                achou = true;
+            }
         }
+        return achou;
     }
 }
