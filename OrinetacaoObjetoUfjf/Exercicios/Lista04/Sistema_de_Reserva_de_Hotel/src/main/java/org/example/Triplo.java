@@ -13,10 +13,13 @@ public class Triplo extends Reserva {
     }
 
     public void setNumRefeicao(int numRefeicao) {
+        if(numRefeicao < 0){
+            throw new  IllegalArgumentException("num de refeição invalida");
+        }
         this.numRefeicao = numRefeicao;
     }
 
     public double calculaValor(){
-        return 0;
+        return  (100*this.getNumDiasHospedagem()) + (this.getNumRefeicao()*10);
     }
 }

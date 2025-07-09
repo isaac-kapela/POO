@@ -14,6 +14,9 @@ public abstract class Reserva {
     }
 
     public void setHospede(Hospede hospede) {
+        if(hospede == null){
+            throw new IllegalArgumentException("precisa de hospede");
+        }
         this.hospede = hospede;
     }
 
@@ -22,8 +25,13 @@ public abstract class Reserva {
     }
 
     public void setNumDiasHospedagem(int numDiasHospedagem) {
+        if(numDiasHospedagem < 1){
+            throw new IllegalArgumentException("so da para marcar por dia");
+
+        }
         this.numDiasHospedagem = numDiasHospedagem;
     }
+
     public abstract double calculaValor();
 
 

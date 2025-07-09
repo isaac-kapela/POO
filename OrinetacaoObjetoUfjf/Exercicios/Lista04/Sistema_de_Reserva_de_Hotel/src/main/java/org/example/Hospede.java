@@ -18,6 +18,9 @@ public class Hospede {
     }
 
     public void setNome(String nome) {
+        if(nome == null || nome.trim().isEmpty()){
+            throw new IllegalArgumentException("precisa de um nome");
+        }
         this.nome = nome;
     }
 
@@ -26,6 +29,9 @@ public class Hospede {
     }
 
     public void setCodigo(int codigo) {
+        if(codigo < 0){
+            throw new IllegalArgumentException("codigo invalido");
+        }
         this.codigo = codigo;
     }
 
@@ -34,6 +40,26 @@ public class Hospede {
     }
 
     public void setReservas(ArrayList<Reserva> reservas) {
+        if(reservas == null){
+            throw new IllegalArgumentException("lista vazia");
+        }
         this.reservas = reservas;
     }
+
+    public ArrayList<Reserva> consultarReservas() {
+        return this.getReservas();
+    }
+
+    public ArrayList<String> consultarResumoReservas() {
+        ArrayList<String> resumo = new ArrayList<>();
+        for (Reserva reserva : reservas) {
+            String linha = "Tipo: " + reserva.getClass().getSimpleName()
+                    + " | Dias: " + reserva.getNumDiasHospedagem()
+                    + " | Valor: R$ " + reserva.calculaValor();
+            resumo.add(linha);
+        }
+        return resumo;
+    }
+
+
 }
