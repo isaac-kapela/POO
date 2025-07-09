@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a8ad02a2-90fc-4196-b4b8-ee4eeafce32f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../ex01.1/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ex01.1/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ex01.1/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ex01.1/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ex01.1/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ex01.1/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ex01.1/src/main/java/org/example/Apartamento.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ex01.1/src/main/java/org/example/Casa.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ex01.1/src/main/java/org/example/Contribuinte.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ex01.1/src/main/java/org/example/Imovel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ex01.1/src/main/java/org/example/Lote.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ex01.1/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ex01.1/src/main/java/org/example/Testes.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Cliente.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Conta.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ContaCorrente.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ContaCorrenteEspecial.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ContaPoupanca.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Testes.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sistema_de_Reserva_de_Hotel/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sistema_de_Reserva_de_Hotel/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sistema_de_Reserva_de_Hotel/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sistema_de_Reserva_de_Hotel/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sistema_de_Reserva_de_Hotel/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sistema_de_Reserva_de_Hotel/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sistema_de_Reserva_de_Hotel/src/main/java/org/example/Duplo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sistema_de_Reserva_de_Hotel/src/main/java/org/example/Hospede.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sistema_de_Reserva_de_Hotel/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sistema_de_Reserva_de_Hotel/src/main/java/org/example/Reserva.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sistema_de_Reserva_de_Hotel/src/main/java/org/example/Single.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sistema_de_Reserva_de_Hotel/src/main/java/org/example/Triplo.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2zbnrcIKO99mGm2uoHKc7AnVrjJ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JUnit.Testes.deveConsultarContasCliente.executor": "Run",
+    "JUnit.Testes.deveLancarExecaoClienteSemConta.executor": "Run",
+    "JUnit.Testes.deveLancarExecaoCodigoInvalido.executor": "Run",
+    "JUnit.Testes.deveLancarExecaoLimiteInvalido.executor": "Run",
+    "JUnit.Testes.deveLancarExecaoListaVazia.executor": "Run",
+    "JUnit.Testes.deveLancarExecaoNomeInvalido.executor": "Run",
+    "JUnit.Testes.deveLancarExecaoNumeroContaInvalida.executor": "Run",
+    "JUnit.Testes.deveLancarExecaoSaldoInvalida.executor": "Run",
+    "JUnit.Testes.deveRetornarResumoDasContas.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/dizol/OneDrive/Área de Trabalho/POO/OrinetacaoObjetoUfjf/Exercicios/Lista04/ex02"
+  }
+}]]></component>
+  <component name="RunManager" selected="JUnit.Testes.deveLancarExecaoLimiteInvalido">
+    <configuration name="Testes.deveLancarExecaoClienteSemConta" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ex02" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.Testes" />
+      <option name="METHOD_NAME" value="deveLancarExecaoClienteSemConta" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Testes.deveLancarExecaoLimiteInvalido" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ex02" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.Testes" />
+      <option name="METHOD_NAME" value="deveLancarExecaoLimiteInvalido" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Testes.deveLancarExecaoListaVazia" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ex02" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.Testes" />
+      <option name="METHOD_NAME" value="deveLancarExecaoListaVazia" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Testes.deveLancarExecaoNumeroContaInvalida" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ex02" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.Testes" />
+      <option name="METHOD_NAME" value="deveLancarExecaoNumeroContaInvalida" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Testes.deveLancarExecaoSaldoInvalida" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ex02" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.Testes" />
+      <option name="METHOD_NAME" value="deveLancarExecaoSaldoInvalida" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.Testes.deveLancarExecaoLimiteInvalido" />
+        <item itemvalue="JUnit.Testes.deveLancarExecaoSaldoInvalida" />
+        <item itemvalue="JUnit.Testes.deveLancarExecaoNumeroContaInvalida" />
+        <item itemvalue="JUnit.Testes.deveLancarExecaoClienteSemConta" />
+        <item itemvalue="JUnit.Testes.deveLancarExecaoListaVazia" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a8ad02a2-90fc-4196-b4b8-ee4eeafce32f" name="Changes" comment="" />
+      <created>1752008839333</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1752008839333</updated>
+    </task>
+    <servers />
+  </component>
+</project>
