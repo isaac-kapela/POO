@@ -36,13 +36,20 @@ public class Cliente {
     public void setContas(ArrayList<Conta> contas) {
         this.contas = contas;
     }
-    public boolean getContasClientes(Cliente cliente){
-        boolean achou = false;
-        for(Conta contas: this.contas){
-            if(contas.getCliente().equals(cliente)){
-                achou = true;
-            }
-        }
-        return achou;
+    public ArrayList<Conta> consultarContas() {
+        return this.contas;
     }
+
+    public ArrayList<String> consultarResumoContas() {
+        ArrayList<String> info = new ArrayList<>();
+        for (Conta conta : contas) {
+            String linha = "Conta Nº: " + conta.getNumero() +
+                    " | Tipo: " + conta.getClass().getSimpleName() +
+                    " | Saldo total: R$ " + conta.getSaldoTotal();
+            info.add(linha);
+        }
+        return info;
+    }
+
+
 }

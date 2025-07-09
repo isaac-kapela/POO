@@ -1,6 +1,6 @@
 package org.example;
 
-public class Conta {
+public  abstract class Conta {
     private Cliente cliente;
     private int numero;
 
@@ -24,4 +24,7 @@ public class Conta {
     public void setNumero(int numero) {
         this.numero = numero;
     }
+
+    public abstract double getSaldoTotal();
+
 }

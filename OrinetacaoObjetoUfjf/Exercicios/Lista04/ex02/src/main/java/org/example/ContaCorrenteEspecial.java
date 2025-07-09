@@ -1,6 +1,7 @@
 package org.example;
 
 public class ContaCorrenteEspecial extends Conta{
+
     private double saldo;
     protected double limiteCredito;
 
@@ -22,5 +23,8 @@ public class ContaCorrenteEspecial extends Conta{
 
     public void setLimiteCredito(double limiteCredito) {
         this.limiteCredito = limiteCredito;
+    }
+    public  double getSaldoTotal(){
+        return this.getSaldo() + this.getLimiteCredito() ;
     }
 }

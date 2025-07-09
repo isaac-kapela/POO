@@ -6,9 +6,9 @@ public abstract class  Imovel {
     private Contribuinte propretario;
 
     public Imovel(int codigo, String endereco, Contribuinte propretario) {
-        this.codigo = codigo;
-        this.endereco = endereco;
-        this.propretario = propretario;
+        this.setCodigo(codigo);
+        this.setEndereco(endereco);
+        this.setPropretario(propretario);
     }
 
     public int getCodigo() {
@@ -16,6 +16,9 @@ public abstract class  Imovel {
     }
 
     public void setCodigo(int codigo) {
+        if(codigo < 0){
+            throw new IllegalArgumentException("informe um codigo valido");
+        }
         this.codigo = codigo;
     }
 
@@ -24,6 +27,9 @@ public abstract class  Imovel {
     }
 
     public void setEndereco(String endereco) {
+        if(endereco  == null || endereco.trim().isEmpty()){
+            throw new IllegalArgumentException("precisa de um endereço");
+        }
         this.endereco = endereco;
     }
 
@@ -32,6 +38,9 @@ public abstract class  Imovel {
     }
 
     public void setPropretario(Contribuinte propretario) {
+        if(propretario  == null ){
+            throw new IllegalArgumentException("precisa de um propetario");
+        }
         this.propretario = propretario;
     }
 

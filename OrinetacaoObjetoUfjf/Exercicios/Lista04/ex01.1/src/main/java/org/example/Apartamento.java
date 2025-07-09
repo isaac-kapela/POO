@@ -27,9 +27,12 @@ public class Apartamento extends  Imovel{
 
 
     public double calculaIptu() {
-        if(this.getAndar() > 0){
-            return (40*this.getMetragemQuadradaApp()) -((40*this.getMetragemQuadradaApp()) * 0.10);
+        double valorBase = 40 * this.getMetragemQuadradaApp();
+        double desconto = 0.10 * this.getAndar();
+        if (andar > 0) {
+            valorBase = valorBase * (1 - desconto);
         }
-        return (40*this.getMetragemQuadradaApp());
+        return valorBase;
     }
+
 }

@@ -8,10 +8,14 @@ public class Lote extends Imovel{
     }
 
     public double getMetragemQuadradaTerreno() {
+
         return metragemQuadradaTerreno;
     }
 
     public void setMetragemQuadradaTerreno(double metragemQuadradaTerreno) {
+        if(metragemQuadradaTerreno <=0){
+            throw new IllegalArgumentException("metragem quadrada invalida");
+        }
         this.metragemQuadradaTerreno = metragemQuadradaTerreno;
     }
 

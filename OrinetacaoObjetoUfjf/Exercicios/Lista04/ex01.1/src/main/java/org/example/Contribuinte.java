@@ -9,9 +9,9 @@ public class Contribuinte {
     private ArrayList<Imovel>imoveis;
 
     public Contribuinte(String nome, int codigo, ArrayList<Imovel> imoveis) {
-        this.nome = nome;
-        this.codigo = codigo;
-        this.imoveis = imoveis;
+        this.setNome(nome);
+        this.setCodigo(codigo);
+        this.setImoveis(imoveis);
     }
 
     public String getNome() {
@@ -19,6 +19,9 @@ public class Contribuinte {
     }
 
     public void setNome(String nome) {
+        if(nome  == null || nome.trim().isEmpty()){
+            throw new IllegalArgumentException("precisa de um nome");
+        }
         this.nome = nome;
     }
 
@@ -27,6 +30,9 @@ public class Contribuinte {
     }
 
     public void setCodigo(int codigo) {
+        if(codigo < 0){
+            throw new IllegalArgumentException("informe um codigo valido");
+        }
         this.codigo = codigo;
     }
 
