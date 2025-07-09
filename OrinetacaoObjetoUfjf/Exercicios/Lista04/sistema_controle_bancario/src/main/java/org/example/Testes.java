@@ -29,8 +29,8 @@ public class Testes {
     public void deveRetornarResumoDasContas() {
         ArrayList<Conta> contas = new ArrayList<>();
         Cliente cliente = new Cliente(123, "Isaac", contas);
-        ContaCorrenteEspecial conta1 = new ContaCorrenteEspecial(cliente, 1, 1000.0, 500.0); // saldo total: 1500.0
-        ContaPoupanca conta2 = new ContaPoupanca(cliente, 2, 200.0);                         // saldo total: 200.0
+        ContaCorrenteEspecial conta1 = new ContaCorrenteEspecial(cliente, 1, 1000.0, 500.0);
+        ContaPoupanca conta2 = new ContaPoupanca(cliente, 2, 200.0);
         contas.add(conta1);
         contas.add(conta2);
         ArrayList<String> resumos = cliente.consultarResumoContas();
