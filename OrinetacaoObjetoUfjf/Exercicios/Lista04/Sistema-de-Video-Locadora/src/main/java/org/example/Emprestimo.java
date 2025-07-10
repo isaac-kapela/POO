@@ -20,6 +20,9 @@ public abstract class Emprestimo {
     }
 
     public void setCliente(Cliente cliente) {
+        if(cliente == null){
+            throw new IllegalArgumentException("cliente invalido");
+        }
         this.cliente = cliente;
     }
 
@@ -28,6 +31,9 @@ public abstract class Emprestimo {
     }
 
     public void setData(LocalDate data) {
+        if(data == null){
+            throw new IllegalArgumentException("precisa de uma data");
+        }
         this.data = data;
     }
 
@@ -36,6 +42,9 @@ public abstract class Emprestimo {
     }
 
     public void setDiasEmprestimo(int diasEmprestimo) {
+        if(diasEmprestimo < 0){
+            throw new IllegalArgumentException("dias invalidos");
+        }
         this.diasEmprestimo = diasEmprestimo;
     }
     public abstract  int calculaValorTotal();

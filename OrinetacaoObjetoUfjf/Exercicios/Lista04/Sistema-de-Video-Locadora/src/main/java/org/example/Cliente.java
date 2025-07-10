@@ -18,6 +18,9 @@ public class Cliente {
     }
 
     public void setCodigo(int codigo) {
+        if(codigo < 0){
+            throw new IllegalArgumentException("codigo invalido");
+        }
         this.codigo = codigo;
     }
 
@@ -26,6 +29,9 @@ public class Cliente {
     }
 
     public void setNome(String nome) {
+        if(nome == null|| nome.trim().isEmpty()){
+            throw new IllegalArgumentException("nome invalido");
+        }
         this.nome = nome;
     }
 
@@ -38,10 +44,10 @@ public class Cliente {
     }
 
     public ArrayList<String> consultarEmprestimosPorCliente() {
-        ArrayList<String> resumo = new ArrayList<>();
         if (emprestimos == null || emprestimos.isEmpty()) {
             throw new IllegalArgumentException("Nenhum empréstimo encontrado para este cliente.");
         }
+        ArrayList<String> resumo = new ArrayList<>();
         for (Emprestimo e : emprestimos) {
             String linha = "Tipo da Fita: " + e.getTipoFita() +
                     "  Data: " + e.getData() +
@@ -51,5 +57,6 @@ public class Cliente {
         }
         return resumo;
     }
+
 
 }
