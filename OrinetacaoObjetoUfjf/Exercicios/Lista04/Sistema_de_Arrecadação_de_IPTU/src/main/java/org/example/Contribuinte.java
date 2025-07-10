@@ -43,4 +43,22 @@ public class Contribuinte {
     public void setImoveis(ArrayList<Imovel> imoveis) {
         this.imoveis = imoveis;
     }
+
+
+    public ArrayList<String> consultarImoveis() {
+        ArrayList<String> lista = new ArrayList<>();
+        if (imoveis == null || imoveis.isEmpty()) {
+            throw new IllegalArgumentException("Nenhum imóvel encontrado");
+        }
+        for (Imovel i : imoveis) {
+            String linha = "Imóvel Código: " + i.getCodigo() +
+                    ", Endereço: " + i.getEndereco() +
+                    ", Tipo: " + i.getClass().getSimpleName() +
+                    ", IPTU: " + i.calculaIptu();
+            lista.add(linha);
+        }
+        return lista;
+    }
+
+
 }

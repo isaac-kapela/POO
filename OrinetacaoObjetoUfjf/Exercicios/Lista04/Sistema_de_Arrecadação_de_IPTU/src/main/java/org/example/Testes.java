@@ -5,8 +5,7 @@ import org.junit.Test;
 
 import java.util.ArrayList;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.fail;
+import static org.junit.Assert.*;
 
 public class Testes {
 
@@ -92,4 +91,43 @@ public class Testes {
             assertEquals("precisa de um nome", e.getMessage());
         }
     }
+
+//    @Test
+//    public void deveRetornarListaDeImoveisComValores() {
+//        ArrayList<Imovel> listaImoveis = new ArrayList<>();
+//        Contribuinte c = new Contribuinte("Isaac", 1, listaImoveis);
+//
+//        Casa casa = new Casa(10, "Rua A, 123", c);
+//        casa.setMetragemQuadradaTerreno(100);
+//        casa.setMetragemQuadradaConstrucao(80);
+//
+//        Lote lote = new Lote(20, "Rua B, 456", c);
+//        lote.setMetragemQuadradaTerreno(50);
+//
+//        Apartamento apt = new Apartamento(30, "Rua C, 789", c);
+//        apt.setMetragemQuadradaApp(70);
+//        apt.setAndar(2);
+//
+//        listaImoveis.add(casa);
+//        listaImoveis.add(lote);
+//        listaImoveis.add(apt);
+//
+//        ArrayList<String> resultado = c.consultarImoveis();
+//
+//        assertEquals(3, resultado.size());
+//
+//        // Verifica se a descrição contém os dados corretos
+//        assertTrue(resultado.get(0).contains("Casa"));
+//        assertTrue(resultado.get(0).contains("Rua A, 123"));
+//        assertTrue(resultado.get(0).contains("IPTU: R$ 7000.00"));
+//
+//        assertTrue(resultado.get(1).contains("Lote"));
+//        assertTrue(resultado.get(1).contains("Rua B, 456"));
+//        assertTrue(resultado.get(1).contains("IPTU: R$ 1500.00"));
+//
+//        assertTrue(resultado.get(2).contains("Apartamento"));
+//        assertTrue(resultado.get(2).contains("Rua C, 789"));
+//        assertTrue(resultado.get(2).contains("IPTU: R$ 2240.00"));
+//    }
+
 }

@@ -42,6 +42,18 @@ public class Cliente {
         return this.fretes;
     }
 
+    public void adicionarFrete(Frete frete) {
+        this.fretes.add(frete);
+    }
+    public ArrayList<Double> consultarValoresFretes() {
+        ArrayList<Double> valores = new ArrayList<>();
+        for (Frete frete : fretes) {
+            valores.add(frete.calcularValorTotal());
+        }
+        return valores;
+    }
+
+
     public ArrayList<String> consultarFretePorClinte() {
         ArrayList<String> resultado = new ArrayList<>();
         if (fretes.isEmpty()) {

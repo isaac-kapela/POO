@@ -53,6 +53,34 @@ public class Testes {
         assertTrue(lista.get(1).contains("Especial"));
         assertTrue(lista.get(1).contains("Valor Total: 10"));
     }
+    @Test
+    public void deveLancarExecaoCodigoInvalido(){
+        try{
+            Cliente cliente = new Cliente(-1, "sla");
+            fail();
+        }
+        catch (IllegalArgumentException e){
+            assertEquals("codigo invalido", e.getMessage());
+        }
+
+    }
+
+    @Test
+    public void deveLancarExecaoNomeInvalido(){
+        try{
+            Cliente cliente = new Cliente(123, " ");
+            fail();
+        }
+        catch (IllegalArgumentException e){
+            assertEquals("nome invalido", e.getMessage());
+        }
+    }
+
+    @Test
+    public void deveLancarExecaoEmprestimoNaoEncotrado(){
+        Cliente cliente = new Cliente(1234, "sla");
+
+    }
 
 
 }

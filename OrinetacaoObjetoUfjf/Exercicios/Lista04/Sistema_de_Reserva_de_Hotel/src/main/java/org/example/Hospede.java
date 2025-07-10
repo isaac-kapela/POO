@@ -7,10 +7,10 @@ public class Hospede {
     private int codigo;
     private ArrayList<Reserva> reservas;
 
-    public Hospede(String nome, int codigo, ArrayList<Reserva> reservas) {
-        this.nome = nome;
-        this.codigo = codigo;
-        this.reservas = reservas;
+    public Hospede(String nome, int codigo) {
+        this.setNome(nome);
+        this.setCodigo(codigo);
+        this.reservas = new ArrayList<>();
     }
 
     public String getNome() {
@@ -40,10 +40,14 @@ public class Hospede {
     }
 
     public void setReservas(ArrayList<Reserva> reservas) {
-        if(reservas == null){
-            throw new IllegalArgumentException("lista vazia");
-        }
         this.reservas = reservas;
+    }
+
+    public void adicionarReserva(Reserva reserva) {
+        if (reserva == null) {
+            throw new IllegalArgumentException("Reserva não pode ser nula");
+        }
+        this.reservas.add(reserva);
     }
 
     public ArrayList<Reserva> consultarReservas() {

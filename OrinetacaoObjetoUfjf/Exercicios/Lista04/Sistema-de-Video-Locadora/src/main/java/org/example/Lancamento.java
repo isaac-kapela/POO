@@ -19,7 +19,7 @@ public class Lancamento extends Emprestimo{
     }
 
     public String getTipoFita() {
-        return "";
+        return "Lancamento";
     }
 
     public int calculaValorTotal() {
