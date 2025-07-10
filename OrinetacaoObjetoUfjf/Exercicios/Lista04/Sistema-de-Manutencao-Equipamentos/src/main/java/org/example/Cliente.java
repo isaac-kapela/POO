@@ -10,7 +10,7 @@ public class Cliente {
     public Cliente(String nome, int codigo) {
         this.setNome(nome);
         this.setCodigo(codigo);
-        this.manutencoes = new ArrayList<>();
+        this.setManutencoes(new ArrayList<>());
     }
 
     public String getNome() {
@@ -39,6 +39,10 @@ public class Cliente {
         return manutencoes;
     }
 
+    public void setManutencoes(ArrayList<Manutencao> manutencoes) {
+        this.manutencoes = manutencoes;
+    }
+
     public void adicionarManutencao(Manutencao manutencao) {
         if (manutencao == null) {
             throw new IllegalArgumentException("Manutenção inválida.");
@@ -49,7 +53,7 @@ public class Cliente {
     public ArrayList<String> consultarResumoManutencoes() {
         ArrayList<String> resumo = new ArrayList<>();
         for (Manutencao m : manutencoes) {
-            String linha = "Manutenção #" + m.getNumero()
+            String linha = "Manutenção " + m.getNumero()
                     + " | Tipo: " + m.getTipo()
                     + " | Valor: R$ " + m.calcularValor();
             resumo.add(linha);

@@ -5,9 +5,16 @@ public class Monitor extends Manutencao {
 
     public Monitor(int numero, Cliente cliente, double maoDeObra) {
         super(numero, cliente);
-        this.maoDeObra = maoDeObra;
+        this.setMaoDeObra(maoDeObra);
     }
 
+    public double getMaoDeObra() {
+        return maoDeObra;
+    }
+
+    public void setMaoDeObra(double maoDeObra) {
+        this.maoDeObra = maoDeObra;
+    }
 
     public double calcularValor() {
         return maoDeObra;
