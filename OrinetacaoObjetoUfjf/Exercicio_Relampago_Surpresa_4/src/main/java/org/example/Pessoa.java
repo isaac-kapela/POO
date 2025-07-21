@@ -14,6 +14,9 @@ public abstract class Pessoa {
     }
 
     public void setNome(String nome) {
+        if(nome == null || nome.trim().isEmpty()){
+            throw new IllegalArgumentException("nome invalido");
+        }
         this.nome = nome;
     }
 

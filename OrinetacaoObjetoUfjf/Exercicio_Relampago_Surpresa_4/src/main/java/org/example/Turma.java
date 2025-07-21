@@ -7,13 +7,16 @@ public class Turma {
     private Curso curso;
     private ArrayList<Aluno> alunos;
     private Disciplina disciplina;
+    private String nome;
 
     public Turma(Professor professor, Curso curso, Disciplina disciplina) {
         this.setProfessor(professor);
         this.setCurso(curso);
-        this.setAlunos(alunos);
         this.setDisciplina(disciplina);
+        this.setAlunos(new ArrayList<>());
+        this.setNome(nome);
     }
+
 
     public Professor getProfessor() {
         return professor;
@@ -43,10 +46,18 @@ public class Turma {
         return disciplina;
     }
 
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
     public void setDisciplina(Disciplina disciplina) {
         this.disciplina = disciplina;
     }
-    public String deveRetornarNomeProfessor(){
+    public String deveRetornarNomeProfessorTurma(){
         return this.getProfessor().getNome();
     }
     public ArrayList<String> deveRetornarNomeTodosAlunosTurma(){
@@ -56,4 +67,26 @@ public class Turma {
             }
             return  nomes;
     }
+
+    public boolean verificaAlunoTurma(String nomeAluno) {
+        for (Aluno aluno : alunos) {
+            if (aluno.getNome().equalsIgnoreCase(nomeAluno)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public boolean removerAluno(Aluno aluno) {
+        if (aluno == null || this.alunos == null) {
+            return false;
+        }
+
+        boolean removido = this.alunos.remove(aluno);
+
+        return removido;
+    }
+
+
+
 }
