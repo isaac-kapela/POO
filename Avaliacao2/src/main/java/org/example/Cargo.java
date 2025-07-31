@@ -12,6 +12,9 @@ public class Cargo {
     }
 
     public void setSalarioBruto(double salarioBruto) {
+        if(salarioBruto < 0){
+            throw new IllegalArgumentException("não pode ter salario negativo");
+        }
         this.salarioBruto = salarioBruto;
     }
 }

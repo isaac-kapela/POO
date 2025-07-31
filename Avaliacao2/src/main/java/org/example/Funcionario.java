@@ -21,6 +21,7 @@ public class Funcionario extends Pessoa {
     }
 
     public void setDepartamento(Departamento departamento) {
+
         this.departamento = departamento;
     }
 
@@ -29,6 +30,9 @@ public class Funcionario extends Pessoa {
     }
 
     public void setCargo(Cargo cargo) {
+        if(cargo == null){
+            throw new IllegalArgumentException("precisa de cargo");
+        }
         this.cargo = cargo;
     }
 
@@ -48,7 +52,30 @@ public class Funcionario extends Pessoa {
         this.ocorrencias = ocorrencias;
     }
 
-    public void calcularSalarioLiquido() {
+        public String getTipoOcorrencia(){
+            String tipo =  "";
+            for(Ocorrencia ocorrencia: this.ocorrencias){
+            if(ocorrencia.getTipoOcorrencia() == "desconto"){
+                tipo = "desconto";
+
+            }
+            else{
+                tipo = "acrescimo";
+            }
+        }
+        return tipo;
+    }
+
+
+
+    public void calcularSalarioLiquido(int ano, int mes) {
+        double salarioLiquido;
+      if(getTipoOcorrencia() == "desconto"){
+          salarioLiquido = cargo.getSalarioBruto();
+
+
+      }
+       // double  = cargo.getSalarioBruto(); -
 
     }
 
