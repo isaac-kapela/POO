@@ -12,9 +12,7 @@ public abstract  class Pessoa {
     }
 
     public void setNome(String nome) {
-        if(nome == null || nome.trim().isEmpty()){
-            throw new IllegalArgumentException("precisa de nome");
-        }
+
         this.nome = nome;
     }
 }

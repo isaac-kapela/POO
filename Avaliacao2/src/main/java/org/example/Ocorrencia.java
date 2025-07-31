@@ -8,12 +8,13 @@ public class Ocorrencia {
     private double valaorOcorrencia;
 
     public Ocorrencia(int mesOcorrencia, int anoOcorrencia, String tipoOcorrencia, String descricaoOcorrencia, double valaorOcorrencia) {
-        this.setAnoOcorrencia(mesOcorrencia);
+        this.setMesOcorrencia(mesOcorrencia);
         this.setAnoOcorrencia(anoOcorrencia);
         this.setTipoOcorrencia(tipoOcorrencia);
         this.setDescricaoOcorrencia(descricaoOcorrencia);
         this.setValaorOcorrencia(valaorOcorrencia);
     }
+
     public int getMesOcorrencia() {
         return mesOcorrencia;
     }
